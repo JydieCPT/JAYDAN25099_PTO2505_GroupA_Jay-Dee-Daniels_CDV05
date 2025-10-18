@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jay-Dee Daniels — Developer</title>
+  <meta name="description" content="Portfolio of Jay-Dee Daniels — front-end developer finishing a JavaScript course. Includes projects, skills and contact." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/avatar.png" alt="Jay-Dee avatar" class="avatar" />
+        <div>
+          <h1>Jay-Dee Daniels</h1>
+          <p class="tagline">JavaScript Developer — Frontend & Web Apps</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Finishing my JavaScript course — building real apps</h2>
+          <p>I build clean, accessible frontend apps using plain HTML, CSS and JavaScript. I focus on usability, performance, and small delightful interactions.</p>
+          <p class="cta-row">
+            <a class="btn primary" href="#projects">See my projects</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <h3>Quick facts</h3>
+          <ul class="facts">
+            <li>JavaScript — intermediate</li>
+            <li>HTML5 & CSS3</li>
+            <li>LocalStorage & browser APIs</li>
+            <li>Vite / React exposure (but I prefer plain HTML/JS)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <div>
+            <p>I'm Jay-Dee, wrapping up a JavaScript course where I built multiple projects: a Kanban task board (with editable modals and localStorage persistence), a podcast app that fetches from a public API, and smaller utilities. I enjoy turning designs into pixel-perfect, responsive interfaces and making UI feel fast and clear.</p>
+
+            <p>I focus on plain, framework-free code to build small apps that scale well, with clean modular JS and careful DOM updates. I'm also experienced in version control and packaging projects for deployment.</p>
+          </div>
+
+          <div class="about-cta">
+            <h3>Reach out</h3>
+            <p>If you'd like to hire me, collaborate, or view code, contact me below — or check the Projects section for links to repositories and live demos.</p>
+            <a href="#contact" class="btn primary">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-grid">
+          <div class="skill">
+            <h4>Languages</h4>
+            <p>JavaScript (ES6+), HTML5, CSS3</p>
+          </div>
+          <div class="skill">
+            <h4>Libraries & Tools</h4>
+            <p>Git, Vite, Browser DevTools</p>
+          </div>
+          <div class="skill">
+            <h4>Frontend Patterns</h4>
+            <p>Modular JS, localStorage persistence, responsive design</p>
+          </div>
+          <div class="skill">
+            <h4>UX & Debugging</h4>
+            <p>Accessibility basics, performance tuning, testing locally</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Kanban -->
+          <article class="project-card" data-project="kanban">
+            <img src="assets/project-screens/kanban.png" alt="Kanban project screenshot" class="project-thumb" />
+            <div class="project-body">
+              <h3>Kanban Task Board</h3>
+              <p>A dynamic Kanban board with draggable columns, editable modals for tasks, and localStorage persistence. Built to match specific UI designs and responsive for mobile.</p>
+              <div class="project-actions">
+                <button class="btn" data-open="kanban-demo">Live demo</button>
+                <a class="btn ghost" href="https://github.com/your-username/jaydan-kanban" target="_blank" rel="noopener">Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Podcast -->
+          <article class="project-card" data-project="podcast">
+            <img src="assets/project-screens/podcast.png" alt="Podcast project screenshot" class="project-thumb" />
+            <div class="project-body">
+              <h3>Podcast App</h3>
+              <p>App that fetches podcast data from a public API and lists episodes with search. Uses the API endpoint you used earlier ("https://podcast-api.netlify.app/").</p>
+              <div class="project-actions">
+                <button class="btn" data-open="podcast-demo">Live demo</button>
+                <a class="btn ghost" href="https://github.com/your-username/podcast-app" target="_blank" rel="noopener">Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Other project sample -->
+          <article class="project-card">
+            <img src="assets/project-screens/other.png" alt="Other project screenshot" class="project-thumb" />
+            <div class="project-body">
+              <h3>Portfolio & Misc</h3>
+              <p>Collection of small utilities and portfolio pages: README-driven projects, deploy-ready static pages, and documentation.</p>
+              <div class="project-actions">
+                <a class="btn" href="#" target="_blank" rel="noopener">Live site</a>
+                <a class="btn ghost" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section resume">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-grid">
+          <div>
+            <h3>Experience & Projects</h3>
+            <ul>
+              <li><strong>Kanban App</strong> — UI & data persistence, editable modals.</li>
+              <li><strong>Podcast App</strong> — Fetch + display remote API data.</li>
+              <li><strong>Various frontend projects</strong> — responsive pages, componentized JS.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Education</h3>
+            <p>JavaScript course (practical projects & DOM-focused tasks).</p>
+            <a href="assets/JayDee_Resume.pdf" class="btn primary" download>Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Send message</button>
+              <button class="btn ghost" type="button" id="mailtoBtn">Open mail client</button>
+            </div>
+
+            <p class="form-note">This form uses `mailto:` fallback. For production, swap to a server endpoint or form service.</p>
+          </form>
+
+          <aside class="contact-side">
+            <h3>Contact info</h3>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></p>
+            <p>Location: Cape Town, South Africa</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jay-Dee Daniels — Built with HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Project modal container -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-inner" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/kanban-demo.js"></script>
+  <script src="js/podcast-demo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
