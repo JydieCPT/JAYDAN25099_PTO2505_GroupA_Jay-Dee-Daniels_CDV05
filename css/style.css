@@ -42,8 +42,8 @@ body {
 }
 .brand { display: flex; align-items: center; gap: 1rem; }
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 105px;
+  height: 105px;
   border-radius: 10px;
   object-fit: cover;
   border: 2px solid var(--accent);
