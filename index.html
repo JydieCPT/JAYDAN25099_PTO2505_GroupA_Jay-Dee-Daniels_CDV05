@@ -79,22 +79,10 @@
       <div class="container">
         <h2 class="section-title">Skills</h2>
         <div class="skill-grid">
-          <div class="skill">
-            <h4>Languages</h4>
-            <p>JavaScript (ES6+), HTML5, CSS3</p>
-          </div>
-          <div class="skill">
-            <h4>Libraries & Tools</h4>
-            <p>Git, Vite, Browser DevTools</p>
-          </div>
-          <div class="skill">
-            <h4>Frontend Patterns</h4>
-            <p>Modular JS, localStorage persistence, responsive design</p>
-          </div>
-          <div class="skill">
-            <h4>UX & Debugging</h4>
-            <p>Accessibility basics, performance tuning, testing locally</p>
-          </div>
+          <div class="skill"><h4>Languages</h4><p>JavaScript (ES6+), HTML5, CSS3</p></div>
+          <div class="skill"><h4>Libraries & Tools</h4><p>Git, Vite, Browser DevTools</p></div>
+          <div class="skill"><h4>Frontend Patterns</h4><p>Modular JS, localStorage persistence, responsive design</p></div>
+          <div class="skill"><h4>UX & Debugging</h4><p>Accessibility basics, performance tuning, testing locally</p></div>
         </div>
       </div>
     </section>
@@ -103,68 +91,39 @@
     <section id="projects" class="section projects">
       <div class="container">
         <h2 class="section-title">Projects</h2>
-
         <div class="projects-grid">
-          <!-- Kanban -->
-          <article class="project-card" data-project="kanban">
-            <img src="assets/project-screens/kanban.png" alt="Kanban project screenshot" class="project-thumb" />
+          <article class="project-card">
             <div class="project-body">
               <h3>Kanban Task Board</h3>
               <p>A dynamic Kanban board with draggable columns, editable modals for tasks, and localStorage persistence. Built to match specific UI designs and responsive for mobile.</p>
               <div class="project-actions">
-                <button class="btn" data-open="kanban-demo">Live demo</button>
-                <a class="btn ghost" href="https://github.com/your-username/jaydan-kanban" target="_blank" rel="noopener">Repository</a>
+                <a class="btn" href="https://jydiecpt.github.io/Kanban-Task-App/" target="_blank">Live Demo</a>
+                <a class="btn ghost" href="https://github.com/JydieCPT/Kanban-Task-App" target="_blank">Repository</a>
               </div>
             </div>
           </article>
 
-          <!-- Podcast -->
-          <article class="project-card" data-project="podcast">
-            <img src="assets/project-screens/podcast.png" alt="Podcast project screenshot" class="project-thumb" />
+          <article class="project-card">
             <div class="project-body">
               <h3>Podcast App</h3>
-              <p>App that fetches podcast data from a public API and lists episodes with search. Uses the API endpoint you used earlier ("https://podcast-api.netlify.app/").</p>
+              <p>App that fetches podcast data from a public API and lists episodes with search. Uses async fetch and DOM rendering.</p>
               <div class="project-actions">
-                <button class="btn" data-open="podcast-demo">Live demo</button>
-                <a class="btn ghost" href="https://github.com/your-username/podcast-app" target="_blank" rel="noopener">Repository</a>
+                <a class="btn" href="https://jydiecpt.github.io/Podcast-App/" target="_blank">Live Demo</a>
+                <a class="btn ghost" href="https://github.com/JydieCPT/JAYDAN25099_PTO2505_GroupA_Jay-Dee-Daniels_DJS02" target="_blank">Repository</a>
               </div>
             </div>
           </article>
 
-          <!-- Other project sample -->
           <article class="project-card">
-            <img src="assets/project-screens/other.png" alt="Other project screenshot" class="project-thumb" />
             <div class="project-body">
               <h3>Portfolio & Misc</h3>
               <p>Collection of small utilities and portfolio pages: README-driven projects, deploy-ready static pages, and documentation.</p>
               <div class="project-actions">
-                <a class="btn" href="#" target="_blank" rel="noopener">Live site</a>
-                <a class="btn ghost" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn" href="#" target="_blank">Live site</a>
+                <a class="btn ghost" href="https://github.com/JydieCPT/JAYDAN25099_PTO2505_GroupA_Jay-Dee-Daniels_CDV04" target="_blank">GitHub</a>
               </div>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESUME -->
-    <section id="resume" class="section resume">
-      <div class="container">
-        <h2 class="section-title">Resume</h2>
-        <div class="resume-grid">
-          <div>
-            <h3>Experience & Projects</h3>
-            <ul>
-              <li><strong>Kanban App</strong> — UI & data persistence, editable modals.</li>
-              <li><strong>Podcast App</strong> — Fetch + display remote API data.</li>
-              <li><strong>Various frontend projects</strong> — responsive pages, componentized JS.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Education</h3>
-            <p>JavaScript course (practical projects & DOM-focused tasks).</p>
-            <a href="assets/JayDee_Resume.pdf" class="btn primary" download>Download PDF</a>
-          </div>
         </div>
       </div>
     </section>
@@ -173,36 +132,21 @@
     <section id="contact" class="section contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
-
         <div class="contact-grid">
           <form id="contactForm" class="contact-form">
-            <label>
-              <span>Name</span>
-              <input type="text" name="name" required />
-            </label>
-
-            <label>
-              <span>Email</span>
-              <input type="email" name="email" required />
-            </label>
-
-            <label>
-              <span>Message</span>
-              <textarea name="message" rows="5" required></textarea>
-            </label>
-
+            <label><span>Name</span><input type="text" name="name" required /></label>
+            <label><span>Email</span><input type="email" name="email" required /></label>
+            <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
             <div class="form-actions">
               <button class="btn primary" type="submit">Send message</button>
               <button class="btn ghost" type="button" id="mailtoBtn">Open mail client</button>
             </div>
-
-            <p class="form-note">This form uses `mailto:` fallback. For production, swap to a server endpoint or form service.</p>
           </form>
 
           <aside class="contact-side">
             <h3>Contact info</h3>
-            <p>Email: <a href="mailto:your.email@example.com">jydiecpt@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/JydieCPT</a></p>
+            <p>Email: <a href="mailto:jydiecpt@gmail.com">jydiecpt@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/JydieCPT" target="_blank">github.com/JydieCPT</a></p>
             <p>Location: Cape Town, South Africa</p>
           </aside>
         </div>
@@ -212,20 +156,8 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Jay-Dee Daniels — Built with HTML, CSS & JavaScript.</p>
+      <p>© <span id="year"></span> Jay-Dee Daniels — Built with HTML, CSS.</p>
     </div>
   </footer>
-
-  <!-- Project modal container -->
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-inner" role="dialog" aria-modal="true">
-      <button class="modal-close" id="modalClose">×</button>
-      <div id="modalContent"></div>
-    </div>
-  </div>
-
-  <script src="js/kanban-demo.js"></script>
-  <script src="js/podcast-demo.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>
